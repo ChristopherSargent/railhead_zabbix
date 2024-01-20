@@ -1,0 +1,5 @@
+#ignore things
+.env
+pgdata
+zbx_instance
+zabbix-data
