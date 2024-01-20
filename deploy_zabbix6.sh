@@ -5,11 +5,6 @@ if [ -f .env ]; then
     export $(grep -v '^#' .env | xargs -d '\n')
 fi
 
-# Create directories
-#mkdir -p railhead_zabbix6/pgdata
-#mkdir -p railhead_zabbix6/zbx_instance/snmptraps
-#mkdir -p railhead_zabbix6/zabbix-data/{alertscripts,externalscripts,export,modules,enc,ssh_keys,mibs,snmptraps}
-
 # Create Docker network
 docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
 
