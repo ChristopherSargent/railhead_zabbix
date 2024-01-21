@@ -1,5 +1,6 @@
 ![alt text](rh_small_logo.jpg)
 * This repository contains a script to deploy Zabbix 6.0 LTS via docker containers. For any additional details or inquiries, please contact us at christopher.sargent@railhead.io.
+[Zabbix Documentation](https://www.zabbix.com/documentation/6.0/en/manual/installation/containers)
 
 # Deploy Zabbix 6.0 LTS
 1. ssh onrails@IP
