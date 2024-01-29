@@ -48,6 +48,9 @@ CONTAINER ID   IMAGE                                             COMMAND        
 ![Screenshot](resources/zabbixhttps.JPG)
 
 # Configure to monitor vmware
+* https://bestmonitoringtools.com/vmware-monitoring-with-zabbix-esxi-vcenter-vm-vsphere/
+* https://adamtheautomator.com/zabbix-monitoring/
+* https://medium.com/@lalit.garghate/monitor-vmware-vsphere-vcenter-with-zabbix-44e77d46c1fc
 1. cd railhead_zabbix
 2. vim zabbix-data/etc/zabbix_server.conf
 * Note StartVMwareCollectors=10, VMwareFrequency=10, VMwarePerfFrequency=10, VMwareCacheSize=512M and VMwareTimeout=120 are configured
