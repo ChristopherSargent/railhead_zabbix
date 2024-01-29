@@ -47,3 +47,10 @@ CONTAINER ID   IMAGE                                             COMMAND        
 
 ![Screenshot](resources/zabbixhttps.JPG)
 
+# Configure to monitor vmware
+1. cd railhead_zabbix
+2. vim zabbix-data/etc/zabbix_server.conf
+* Note StartVMwareCollectors=10, VMwareFrequency=10, VMwarePerfFrequency=10, VMwareCacheSize=512M and VMwareTimeout=120 are configured
+3. vim deploy_zabbix6.sh
+* Note line 49 has been added. -v "./zabbix-data/etc:/etc/zabbix:rw" \
+4. ./deploy_zabbix6.sh

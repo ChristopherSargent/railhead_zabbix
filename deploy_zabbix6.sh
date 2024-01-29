@@ -46,6 +46,7 @@ docker run --name zabbix-server-pgsql -t \
       -v "./zabbix-data/ssh_keys:/var/lib/zabbix/ssh_keys:ro" \
       -v "./zabbix-data/mibs:/var/lib/zabbix/mibs:ro" \
       -v "./zabbix-data/snmptraps:/var/lib/zabbix/snmptraps:rw" \
+      -v "./zabbix-data/etc:/etc/zabbix:rw" \
       --restart unless-stopped \
       -d zabbix/zabbix-server-pgsql:alpine-6.0-latest
 
